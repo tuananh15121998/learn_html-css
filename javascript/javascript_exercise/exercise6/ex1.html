@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm thứ trong tuần của ngày hiện tại</title>
+  </head>
+  <body>
+    <script language="javascript">
+      // Để giải bài này thì cần phải biết đối tượng Date và hàm getDate()
+      // Để lấy ngày hiện tại thì ta thông qua đối tượng Date, đối tượng này sẽ chứa thông tin
+      // về ngày tháng của ngày hiện tại
+
+      // Khai báo đối tượng Date
+      var date = new Date();
+      // Lấy số thứ tự của ngày hiện tại
+      var current_date = date.getDay();
+      // Biến lưu tên của thứ
+      var day_name = "";
+
+      switch (current_date) {
+        case 0:
+          day_name = "Chủ nhật";
+          break;
+
+        case 1:
+          day_name = "Thứ hai";
+          break;
+
+        case 2:
+          day_name = "Thứ ba";
+          break;
+        case 3:
+          day_name = "Thứ 4";
+          break;
+
+        case 4:
+          day_name = "Thứ 5";
+          break;
+
+        case 5:
+          day_name = "Thứ 6";
+          break;
+
+        case 6:
+          day_name = "Thứ 7";
+          break;
+      }
+      document.write(day_name);
+    </script>
+  </body>
+</html>

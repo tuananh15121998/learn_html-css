@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiển thị giá trị của ô input</title>
+  </head>
+
+  <body>
+    <input type="text" id="id_textbox" value="" />
+    <input type="button" id="id_button" value="Hiển thị thông báo" />
+
+    <script>
+      var button = document.getElementById("id_button");
+      //   button.addEventListener("click", function () {
+      //     alert("cảm ơn bạn rất nhiều");
+      //   });
+      button.addEventListener("click", function () {
+        var value = document.getElementById("id_textbox").value;
+        alert(value);
+      });
+    </script>
+  </body>
+</html>

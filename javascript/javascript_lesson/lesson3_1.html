@@ -1,0 +1,32 @@
+<!-- Viết chương trình khi click vào button thì xuất hiện một thông báo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3.1 of javascript</title>
+  </head>
+  <body>
+    <!-- Đề bài: Viết chương trình khi click vào button thì
+    xuất hiện thông báo  -->
+
+    <!-- Cách 1 -->
+    <input type="button" id="id_button" value="click me" />
+    <script language="javascript">
+      var button = document.getElementById("id_button");
+      button.addEventListener("click", function () {
+        alert("Xin chào các bạn");
+      });
+    </script>
+
+    <!-- Cách 2 -->
+    
+      <input
+        type="button"
+        onclick="alert('Xin chào các bạn')"
+        value="Click Me"
+      ></input>
+   
+  </body>
+</html>

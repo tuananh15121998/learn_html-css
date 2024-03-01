@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise_1</title>
+  </head>
+  <body>
+    <!-- Tạo một ô textbox và một button
+    sau đó xử lý sự kiện khi click vào button
+    thì xuất một thông báo lên trình duyệt với nội dung
+    thông báo là giá trị của ô textbox -->
+    <form action="">
+      <input type="text" id="textbox" />
+      <input type="button" id="button_1" />
+    </form>
+    <script>
+      var button = document.getElementById("button_1");
+
+      //   button.addEventListener("click", function () {
+      //     var textbox = document.getElementById("textbox").value;
+      //     alert(textbox);
+      //   });
+
+      button.onclick = function () {
+        var textbox = document.getElementById("textbox").value;
+        alert(textbox);
+      };
+    </script>
+  </body>
+</html>
