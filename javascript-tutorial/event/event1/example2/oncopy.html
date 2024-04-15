@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện event trong Javascript</title>
+  </head>
+  <body>
+    <!-- Viết chương trình khi người dùng copy nội dung của website thì thông báo là 
+    bạn đã copy thành công -->
+
+    <script>
+      function show_message() {
+        alert("Bạn đã copy thành công");
+      }
+    </script>
+
+    <h3>Hãy copy dòng chữ dưới đây</h3>
+    <div oncopy="show_message()">Chào mừng các bạn</div>
+  </body>
+</html>

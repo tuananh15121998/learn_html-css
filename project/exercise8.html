@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise8</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        max-width: 960px;
+        margin: 0px auto;
+      }
+
+      ul.list-product {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+      }
+      ul.list-product li {
+        flex-basis: 33%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        background-color: white;
+      }
+
+      ul.list-product li .product-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: block;
+        position: relative;
+        overflow: hidden;
+      }
+
+      ul.list-product li .product-item a.buy-now {
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        background-color: #446084;
+        color: #fff;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+      }
+      ul.list-product li:hover a.buy-now {
+        bottom: 0px;
+      }
+    </style>
+
+    <div class="container">
+      <h1>Bài tập 8 - Áp dụng hiệu ứng css</h1>
+      <ul class="list-product">
+        <li>
+          <div class="product-item text-center">
+            <a href="">
+              <img src="images/product5.jpg" alt="" />
+            </a>
+            <a href="" class="buy-now">Mua ngay</a>
+          </div>
+        </li>
+
+        <!-- <li>
+          <div class="product-item">Product item 1</div>
+        </li>
+        <li>
+          <div class="product-item">Product item 1</div>
+        </li>
+
+        <li>
+          <div class="product-item">Product item 1</div>
+        </li>
+
+        <li>
+          <div class="product-item">Product item 1</div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>

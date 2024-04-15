@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font size</title>
+  </head>
+
+  <body>
+    <style>
+      /* Mặc định trình duyệt website có font-size 16px -> html */
+      /* font -size có tính kế thừa */
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+
+        /* k em = font chữ mong muốn / font - size của phần tử cha */
+        /* k rem = font size mong muốn / font - size của phần tử html */
+      }
+
+      #wrapper {
+        width: 960px;
+        margin: 0px auto;
+      }
+
+      article {
+        font-size: 2rem;
+      }
+      .font-size-16px {
+        font-size: 16px;
+        /* font-size: 50%; */
+        /* font-size: 0.5em; */
+        /* convert px => rem */
+      }
+      /* Khi nào thì làm việc với rem, px: Khi mà giao diện website cần làm việc với nhiều thiết bị màn hình */
+    </style>
+
+    <div id="wrapper">
+      <article>
+        <h1>Font family</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="font-size-16px">Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attr Selector</title>
+  </head>
+  <body>
+    <style>
+      a[href] {
+        color: red;
+      }
+
+      a[href = "http://google.com"]
+      {
+        color: greenyellow;
+      }
+      a[href$="com"] {
+        color: blue;
+      }
+    </style>
+
+    <h1>Attr Selector</h1>
+    <a href="http://unitop.vn">Php Master</a><br />
+    <a href="http://google.com">Bootstrap AZ</a>
+    <a href="http://braniumacadamy.com">BraniumAcadamy</a>
+  </body>
+</html>

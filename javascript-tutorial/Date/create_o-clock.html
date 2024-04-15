@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a o'clock</title>
+
+    <script>
+      // Hàm tạo đồng hồ
+      function startTime() {
+        // Lấy Object ngày hiện tại
+        var today = new Date();
+
+        // Giờ phút, giây hiện tại
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+
+        // Chuyển đối sang dạng 01, 02, 03
+        m = checkTime(m);
+        s = checkTime(s);
+
+        // Ghi ra trình duyệt
+        document.getElementById("timer").innerHTML = h + ":" + m + ":" + s;
+
+        // Dùng hàm setTimeout để thiết lập gọi lại 0.5 giây/lần
+        var t = setTimeout(function () {
+          startTime();
+        }, 500);
+      }
+
+      // Hàm chuyển đổi định dạng những con số sang dạng 01, 02, 03,...
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+  <body onload="startTime()">
+    <!-- Sự kiện onload = "startTime()" dùng để chạy đồng hồ khi website được load lên -->
+    <div id="timer"></div>
+  </body>
+</html>

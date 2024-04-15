@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p>Nhập a:</p>
+    <input type="text" id="a" />
+    <p>Nhập b:</p>
+    <input type="text" id="b" />
+    <div id="result"></div>
+    <br />
+    <input type="button" id="sum" value="Tổng hai số là:" />
+
+    <script>
+      var button = document.getElementById("sum");
+      button.addEventListener("click", function () {
+        let a = Number(document.getElementById("a").value);
+        let b = Number(document.getElementById("b").value);
+
+        try {
+          if (isNaN(a) || isNaN(b)) {
+            throw new Error("Dữ liệu nhập vào không phải là sô");
+          }
+        } catch (e) {
+          console.log(e.message);
+          return false;
+        }
+
+        let sum = a + b;
+        document.getElementById("result").innerHTML = sum;
+      });
+    </script>
+  </body>
+</html>

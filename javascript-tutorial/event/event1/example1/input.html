@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ 1 trong bài 1 phần sự kiện của js</title>
+  </head>
+  <body>
+    <!-- Viết chương trình gồm một ô input và một thẻ div dùng để hiển thị nội dung(giá trị ô input)khi người dùng gõ vào ô input -->
+
+    <script>
+      // Lấy hai thẻ HTML
+      function show_result() {
+        var input = document.getElementById("message");
+        var div = document.getElementById("result");
+
+        // Gán nội dung ô input vào thẻ div
+        div.innerHTML = input.value;
+      }
+    </script>
+
+    <input type="text" id="message" value="" onkeyup="show_result()" />
+    <div id="result"></div>
+  </body>
+</html>

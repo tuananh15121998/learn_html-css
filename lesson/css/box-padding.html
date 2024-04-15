@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        width: 400px;
+        height: 200px;
+        background: burlywood;
+        /* padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px; */
+        /* padding: 10px 20px trong trường hợp này thì 
+        nó tự lấy đối xứng top-bottom right-left */
+
+        padding: 10px 20px 10px 20px;
+
+        /* padding có tính chất lặp đi lặp lại */
+
+        .pb-10 {
+          padding-bottom: 10px;
+        }
+      }
+    </style>
+
+    <h1>Padding</h1>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis
+        blanditiis debitis. Fugiat corporis quasi accusamus dicta, at
+        repudiandae, ex iste velit quia, debitis iure molestiae omnis. Voluptas,
+        facilis ipsum?
+      </p>
+    </div>
+  </body>
+</html>

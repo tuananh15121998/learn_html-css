@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Next</title>
+  </head>
+  <body>
+    <style>
+      h2 ~ p {
+        color: red;
+      }
+
+      h2 ~ p.hightlight {
+        color: blue;
+      }
+    </style>
+
+    <h2>Heading h2</h2>
+    <p>Paragraph 1</p>
+    <img
+      src="https://i.pinimg.com/736x/86/67/c8/8667c88a17f71382d4b4bc6c99d9b887.jpg"
+      alt=""
+    />
+    <p class="hightlight">Paragraph 2</p>
+    <p>Paragraph 3</p>
+  </body>
+</html>

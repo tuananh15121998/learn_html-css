@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện onkeyup trong javascript</title>
+  </head>
+  <body>
+    <!-- Viết chương trình
+    tính tổng hai số nhập vào(tính tự động) -->
+
+    <script>
+      function tinh_tong() {
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var result = document.getElementById("result");
+
+        var tong = parseInt(a.value) + parseInt(b.value);
+
+        if (!isNaN(tong)) {
+          result.value = tong;
+        }
+      }
+    </script>
+
+    a: <input type="text" id="a" onkeyup="tinh_tong()" /> b:
+    <input type="text" id="b" onkeyup="tinh_tong()" /> kết quả:
+    <input type="text" name="" id="result" />
+  </body>
+</html>

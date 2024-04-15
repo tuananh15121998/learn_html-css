@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-sizing</title>
+  </head>
+  <body>
+    <style>
+      .box-1 {
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        border: 2px solid red;
+        margin-bottom: 20px;
+        box-sizing: content-box;
+      }
+
+      .box-2 {
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        border: 2px solid red;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <h1>Box sizing</h1>
+    <div class="box-1">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        sequi quidem consequatur quibusdam quo delectus laudantium
+        necessitatibus velit sapiente ullam tempora ducimus ex odio nemo
+        repellendus, mollitia fugiat voluptatem quos!
+      </p>
+    </div>
+
+    <div class="box-2">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        sequi quidem consequatur quibusdam quo delectus laudantium
+        necessitatibus velit sapiente ullam tempora ducimus ex odio nemo
+        repellendus, mollitia fugiat voluptatem quos!
+      </p>
+    </div>
+  </body>
+</html>

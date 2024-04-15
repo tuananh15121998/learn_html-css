@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yêu cầu bài tập số 6 - Layout web Flex Css</title>
+  </head>
+  <body>
+    <style>
+      #wrapper {
+        width: 600px;
+        min-height: 660px;
+        background-color: aqua;
+        margin: 0px auto;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 500px;
+      }
+      .content {
+        flex-grow: 0.7;
+        min-height: 500px;
+        background-color: aliceblue;
+        padding-left: 5px;
+      }
+
+      .sidebar {
+        flex-grow: 0.3;
+        background-color: gainsboro;
+        min-height: 500px;
+      }
+
+      .header {
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+      }
+      .header_p {
+        margin: auto 0px;
+      }
+      .footer {
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+      }
+      .footer_content {
+        margin: auto 0px;
+      }
+    </style>
+
+    <div id="wrapper">
+      <div class="header">
+        <div class="header_p">
+          <p>Layout web 2 cột - Flex css</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="sidebar">
+          <p>Sidebar</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_content">
+          <p>unitop.vn</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

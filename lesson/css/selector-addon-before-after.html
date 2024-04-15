@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before After Selector</title>
+  </head>
+  <body>
+    <style>
+      h2:before {
+        /* Thuộc tính bắt buộc phải có */
+        content: "Trước";
+
+        color: red;
+      }
+
+      h2:after {
+        content: "Sau";
+        color: blue;
+      }
+
+      .list-post a.new:after {
+        content: url("https://www.vssgroups.org/wp-content/uploads/2018/09/arrow-with-new-letter-icon-gif-animation.gif");
+      }
+    </style>
+
+    <h2>Before After Selector</h2>
+    <ul class="list-post">
+      <li><a href="" class="new">Bài viết số 1</a></li>
+      <br /><br />
+      <li><a href="" class="new">Bài viết số 2</a></li>
+      <br /><br />
+      <li><a href="" class="new">Bài viết số 3</a></li>
+      <br /><br />
+      <li><a href="" class="">Bài viết số 4</a></li>
+    </ul>
+  </body>
+</html>

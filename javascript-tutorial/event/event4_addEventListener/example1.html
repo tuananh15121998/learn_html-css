@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sử dụng hàm addEventListener</title>
+  </head>
+  <body>
+    <!-- Xây dựng chức năng khi nhập dữ liệu vào ô input thì hiển thị giá trị ô input đó -->
+    <input type="text" name="" id="txt-val" />
+    <div id="result"></div>
+
+    <script>
+      var input = document.getElementById("txt-val");
+      input.addEventListener("keyup", function () {
+        document.getElementById("result").innerHTML = input.value;
+      });
+    </script>
+  </body>
+</html>

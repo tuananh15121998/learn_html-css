@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line height</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      .box-1,
+      .box-2 {
+        width: 400px;
+        border: 1px solid #f00;
+        margin-bottom: 10px;
+      }
+
+      /* Sử dụng line-height để giãn dòng */
+      /* line-height tối đa từ 1.2 đến 1.5 
+      nó liên quan đến rất nhiều font-size */
+      .box-1 {
+        line-height: 1.5;
+      }
+    </style>
+
+    <h1>Line Height</h1>
+    <div class="box-1">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="box-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </body>
+</html>

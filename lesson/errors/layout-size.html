@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+  </head>
+  <body>
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0px auto;
+        min-height: 960px;
+      }
+      #header {
+        text-align: center;
+        padding: 5px;
+        min-height: 50px;
+        background: green;
+      }
+
+      #footer {
+        text-align: center;
+        min-height: 30px;
+        background: green;
+        padding: 10px;
+      }
+      #wp-content {
+        min-height: 600px;
+        background: gainsboro;
+      }
+      #content {
+        float: left;
+        width: 600px;
+        min-height: 600px;
+      }
+      #sidebar {
+        background: gray;
+        float: left;
+        width: 360px;
+        min-height: 600px;
+      }
+      .content-p {
+        margin-left: 25px;
+      }
+      .sidebar-p {
+        margin-left: 15px;
+      }
+    </style>
+
+    <div id="wrapper">
+      <div id="header"><p class="header_p">Layout website 2 cột</p></div>
+      <div id="wp-content">
+        <div id="content">
+          <div class="content-p">Content</div>
+        </div>
+        <div id="sidebar">
+          <div class="sidebar-p">Sidebar</div>
+        </div>
+      </div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>

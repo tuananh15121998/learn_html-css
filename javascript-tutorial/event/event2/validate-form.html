@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate form sử dụng return trong javascript</title>
+  </head>
+  <body>
+    <!-- Validate form sử dụng return trong javascript -->
+
+    <script>
+      function check_Validate_form() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var re_password = document.getElementById("re_password").value;
+
+        // if (username == "") {
+        //   alert("Bạn chưa nhập username");
+        //   return false;
+        // }
+
+        // if (password == "") {
+        //   alert("Bạn chưa nhập password");
+        //   return false;
+        // }
+
+        // if (password != re_password) {
+        //   alert("Mật khẩu nhập lại không đúng");
+        //   return false;
+        // }
+
+        if (username == "" || password == "" || re_password != password) {
+          alert("Invalid form");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+
+    <form action="">
+      Username:
+      <input type="text" value="" name="username" id="username" /> Password:
+      <input type="text" value="" name="password" id="password" /> Re_password:
+      <input type="text" value="" name="re_password" id="re_password" />
+      <input
+        type="submit"
+        value="Register"
+        id="register"
+        onclick=" return check_Validate_form()"
+      />
+    </form>
+  </body>
+</html>

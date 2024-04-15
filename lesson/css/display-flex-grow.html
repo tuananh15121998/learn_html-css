@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex Grow</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        background-color: blanchedalmond;
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .flex-item {
+        background-color: tomato;
+        padding: 30px;
+        width: 100px;
+        margin: 10px;
+        font-size: 18px;
+        text-align: center;
+        flex-basis: 400px;
+      }
+      /* mặc định ban đầu cả 4 item đều có vị trí order là 0 */
+      .item-1 {
+       flex-grow: 0.3;
+      }
+      .item-2 {
+        flex-grow: 0.7;
+      }
+     
+    </style>
+
+    <h1>Display Flex Grow</h1>
+    <div class="container">
+      <div class="flex-item item-1">1</div>
+      <div class="flex-item item-2">2</div>
+  </body>
+</html>

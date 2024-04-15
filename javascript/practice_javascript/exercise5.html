@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+  </head>
+  <body>
+    <!-- Cho hai số a và b được lấy từ người dùng thông qua hàm prompt
+        sau đó thực hiện các phép toán cộng, trừ, nhân, chia
+        và chia lấy dư trên hai số đó rồi in kết quả lên trình duyệt
+    -->
+    <script>
+      var a = prompt("Xin nhập vào số a");
+      var b = prompt("xin nhập vào số b");
+
+      a = parseInt(a);
+      b = parseInt(b);
+
+      document.write("Tổng hai số a và b là: " + (a + b) + "<br/>");
+      document.write("Tích hai số a và b là: " + a * b + "<br/>");
+      document.write("Hiệu hai số a và b là: " + (a - b) + "<br/>");
+      document.write("Thương hai số a và b là: " + a / b + "<br/>");
+      document.write("Chia lấy phần dư hai số a và b là: " + (a % b));
+    </script>
+  </body>
+</html>

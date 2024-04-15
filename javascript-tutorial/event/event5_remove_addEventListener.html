@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện remove_addEventListener</title>
+  </head>
+  <body>
+    <!-- Xây dựng một ứng dụng khi di chuyển chuột
+    thì sẽ xuất hiện một dãy số ngẫu nhiên
+    nếu người dùng click vào button Stop Random thì sẽ dừng random dãy số đó -->
+
+    <div id="result"></div>
+    <input type="button" value="Stop Random" id="stop_random" />
+
+    <script>
+      var result = document.getElementById("result");
+      var button = document.getElementById("stop_random");
+      var html = document.getElementsByTagName("html")[0];
+
+      function do_random() {
+        var randomString = Math.random();
+        result.innerHTML = randomString;
+      }
+
+      html.addEventListener("mousemove", do_random);
+
+      button.addEventListener("click", function () {
+        html.removeEventListener("mousemove", do_random());
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiển thị danh sách sản phẩm bài viết hàng ngang</title>
+  </head>
+  <body>
+    <style>
+      #wrapper {
+        max-width: 960px;
+        margin: 0px auto;
+      }
+      ul.list-product {
+        list-style: none;
+        padding: 0px;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul.list-product li {
+        flex-basis: 33.33%;
+
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+      }
+      ul.list-product li .product-item {
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
+    <div id="wrapper">
+      <h1>Hiển thị danh sách sản phẩm, bài viết theo hàng ngang - Flex</h1>
+      <!-- Danh sách -->
+      <ul class="list-product">
+        <li>
+          <div class="product-item">
+            <!-- Ảnh 
+                    Tiêu đề
+                    Giá
+                    Mua ngay -->
+            <a href="">Lorem ipsum dolor sit amet.</a>
+            <a href="">
+              <span>Mua ngay</span>
+            </a>
+          </div>
+        </li>
+        <li><div class="product-item">Product 2</div></li>
+        <li><div class="product-item">Product 3</div></li>
+        <li><div class="product-item">Product 4</div></li>
+        <li><div class="product-item">Product 5</div></li>
+        <li><div class="product-item">Product 6</div></li>
+      </ul>
+    </div>
+  </body>
+</html>

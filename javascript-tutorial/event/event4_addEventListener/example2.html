@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện sử dụng addEventListener</title>
+  </head>
+  <body>
+    <!-- Xây dựng chức năng khi nhập dữ liệu vào ô input
+    thì hiển thị giá trị của ô input đó ra bên ngoài
+    Kiểm tra nếu nhập dài hơn 5 ký tự thì thông báo -->
+    <input type="text" id="txt_val" />
+    <div id="result"></div>
+
+    <script>
+      var input = document.getElementById("txt_val");
+      var result = document.getElementById("result");
+
+      input.addEventListener("keyup", function () {
+        result.innerHTML = input.value;
+      });
+
+      input.addEventListener("keyup", function () {
+        if (input.value.length > 5) {
+          alert("Bạn đã nhập nhiều hơn 5 ký tự");
+        }
+      });
+    </script>
+  </body>
+</html>
